@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <h1 class="title" id= "title">
+        Sage Spa Appointment Form
+    </h1>
+    <p class= "description" id="description">
+      Please fill out this form prior to your first appointment so you can have the best possible spa experience
+    </p>
+    <img src="https://i.pinimg.com/originals/a8/4b/e3/a84be379b3e24df9317656b43fdcbd2d.jpg" alt="sage spa pic">
+</head>
+<body>
+       <form class="form" id="survey-form">
+          <label for="name" id="name-label"> Name
+          <input class= "name"  type= "name"  id="name" placeholder= "First and Last Name" required ></label>
+        <label for= "email" id="email-label"> Email
+          <input class= "email" id="email" type= "email" name= "email" placeholder= "Email Address" required></label>
+        <label for= "phone-number" id= "phone"> Phone 
+          <input class= "number" id="phone-number" type="tel" name="phone-number"  placeholder= "Phone Number" required></label>
+      
+        <p class="description" >
+          How did you hear about us?
+        </p>
+        <select class= "menu" id= "dropdown" > 
+          <option value ="1">Family or Friends</opton>
+          <option value= "2">Online</option>
+          <option value= "3">Television Ad</option>
+        </select>
+      <p class="description">
+        What type of experience are you looking for?
+      </p>
+      <label class="label1" for= "relaxing">
+      <input type= "radio" name="experience" value="1">  Relaxing  and calm</label>
+      <label class="label2" for="rejuvinating">
+      <input type= "radio" name= "experience" value="2">   Rejuvinating and refreshing </label>
+      <label class= "label3" for= "energizing">
+      <input type= "radio" name= "experience" value= "3"> Energizing and stimulating</label>
+      <p class="description">
+        What service or services did you book?
+      </p>
+      <p class= "smalltext">
+        (Check all services that you have booked for your appointment today)
+      </p>
+      <div id="box-container">
+        <div id="box-1">
+          Nails 
+          <label class="labelbox-1" for= "Manicure"><input id= "manicure" value= "1" class="labelbox-1" type= "checkbox" name="nails">   Manicure</label>
+          <label class= "labelbox-1" for= "Pedicure"><input  id= "pedicure" value= "2" class= "labelbox-1" type= "checkbox" name = "nails">  Pedicure </label>
+      <label class= "labelbox-1" for= "Gel-manicure"> <input id="gel-manicure" value= "3" class = "labelbox-1" type= "checkbox" name = "nails"> Gel Manicure</label>
+          <label class= "labelbox-1" for= "Gel-pedicure" > <input id= "gel-pedicure" value= "4" class= "labelbox-1" type= "checkbox" name= "nails"> Gel Pedicure</label>
+          <label class= "labelbox-1" for= "dip-powder-manicure"> <input id= "5" value= "dip-powder" class= "labelbox-1" type= "checkbox" name= "nails"> Dip Powder Manicure</label>
+        </div>
+        <div id= "box-2"> Facials
+          <label class= "labelbox-2" for= "oxygen-facial"> <input id= "oxygen" value= "1" class= "labelbox-2" type= "checkbox" name= "facials"> Oxygen Facial</label>
+          <label class= "labelbox-2" for= "LED-facial"><input id= "LED" value= "2" class= "labelbox-2" type= "checkbox" name= "facials">  LED-Light Facial</in></label>
+          <label class= "labelbox-2" for= "microdermabrasion"> <input id= "microderm" value= "3" class= "labelbox-2" type= "checkbox" name ="facials">  Microdermabrasion</label>
+          <label class= "labelbox-2" for= "mud-mask"><input id= "mudmask" value= "4" class="labelbox-2" type="checkbox" name= "facials">Mud Mask</label>
+          <label class= "labelbox-2" for= "chemical-peel"><input id="chemical" value= "5" class= "labelbox-2" type="checkbox" name= "facials">Chemical Peel</label>
+      </div>
+    <div id= "box-3">
+      Massages <br>
+      <label class= "labelbox-3" for= "full-body-massage"><input id= "full-body" value = "1"class= "labelbox-3" type= "checkbox" name= "massages">  Full Body Massage</label>
+      <label class= "labelbox-3" for= "head-neck-massage"><input id= "head-neck" value= "2" class= "labelbox-3" type= "checkbox" name= "massages"> Head & Neck Massage</label>
+      <label class= "labelbox-3" for= "hand-massage"> <input  id= "hand" value= "3" class= "labelbox-3" type= "checkbox" name= "massages"> Hand Massage</label>
+      <label class= "labelbox-3" for= "foot-massage"> <input id= "foot" value= "4" class= "labelbox-3" type= "checkbox" name= "massages">  Foot Massage</label>
+      <label class= "labelbox-3" for= "couple-massage"> <input id= "couple" value= "5" class= "labelbox-3" type= "checkbox" name= "massages">  Couples Massage</label>
+    </div>
+    </div>
+    <p class= "description">
+      You may bring up to 3 guests with you to your appointment. Please tell us how many guests you will have: 
+    </p>
+    <label for= "number" id= "number-label"> Number of Guests
+      <input class= "number" id="number" type= "number" min= "0" max= "3" placeholder = "#" id= "guestnumber" name= "guestnumber" required></label>
+    <p class= "description">
+      Please tell us if there is anything else you would like us to know before you come into your appointment
+    </p>
+    <div id ="box-container">
+    <div id="comments-box">
+      <textarea id="comments" class= "labelbox-4" rows= "1" columns= "1" placeholder="Additional Comments"></textarea>
+      </div> </div>
+    <label for= "button" id= "button">
+      <button type="submit" id= "submit"class="submit-button">
+      Submit
+      </button></label>
+      </form>
+    </html>
+</body>
+</html>
